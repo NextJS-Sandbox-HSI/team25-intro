@@ -1,22 +1,21 @@
-import styles from './dandyar.module.css'
+import styles from './sandimar.module.css'
 
-export default function Dandyar() {
+export default function Sandimar() {
   return (
     <div className={`${styles.container} min-h-screen flex items-center justify-center`}>
-        
         <div className="w-full max-w-4xl mx-auto bg-black bg-opacity-25 backdrop-blur-md rounded-2xl shadow-2xl p-8 md:p-12 text-center">
             
             <h1 className="text-white text-4xl md:text-6xl font-black tracking-tight mb-4">
-                Dandy Alfaz
+                Sandi Mardiansyah
             </h1>
             
             <div className="w-24 h-1 bg-white bg-opacity-50 mx-auto my-6 rounded-full"></div>
 
             <p className="text-base md:text-lg leading-relaxed text-gray-200 mb-3">
-                Hi, I'm from Bandung, Indonesia. On a daily basis, I actively engage in developer advocacy, perform code reviews, and facilitate Scrum practices as a Scrum Master. Most of my daily work involves coding in Java.
+                Assalammu'alaikum, saya berasal dari Soreang-Bandung. Mengikuti bootcamp ini karena saya ingin beralih menjadi seorang web developer.
             </p>
 
-            <p className="text-base md:text-lg leading-relaxed text-gray-200 mb-5">I am passionate about badminton, motorcycles, literature, computers, and books. I am also continuously seeking opportunities to learn, collaborate, and contribute to impactful technology solutions.</p>
+            <p className="text-base md:text-lg leading-relaxed text-gray-200 mb-5">Semoga setelah bootcamp selesai, saya bisa membuat produk yang dapat dimanfaatkan oleh semua orang.</p>
 
             <div className="flex justify-center items-center space-x-6">
                 <a href="https://www.linkedin.com/in/dandyalfaz/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-transform duration-300 transform hover:scale-110">
