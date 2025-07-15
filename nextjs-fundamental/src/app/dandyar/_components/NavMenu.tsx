@@ -18,7 +18,10 @@ export default function NavigationMenu({
   return (
     // Overlay yang menutupi layar
     <div
-      className={`fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-300 ease-in-out ${
+    style={{
+  background: 'radial-gradient(circle at right, rgba(255, 105, 180, 0.75) 30%, rgba(0, 0, 0, 0.6) 100%)',
+}}
+      className={`fixed inset-0 z-40 transition-opacity duration-300 ease-in-out ${
         isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
       }`}
       onClick={onClose} // Menutup menu saat klik di luar area menu
