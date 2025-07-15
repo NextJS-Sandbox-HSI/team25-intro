@@ -1,4 +1,4 @@
-import styles from './module.css'
+import styles from './isnaenihidayat.module.css'
 
 export default function Isnaeni() {
   return (
