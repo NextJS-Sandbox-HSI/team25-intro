@@ -39,4 +39,3 @@ export default function fanjimultiadiabuimran () {
         </div>
  );
 }
-export default function fanjimultiadi() { }
