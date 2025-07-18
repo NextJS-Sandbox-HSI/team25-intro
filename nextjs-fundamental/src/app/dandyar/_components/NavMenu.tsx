@@ -9,10 +9,9 @@ export default function NavigationMenu({
 }) {
   // Daftar link navigasi
   const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/projects", label: "Projects" },
-    { href: "/contact", label: "Contact" },
+    { href: "/dandyar", label: "Home" },
+    { href: "/dandyar/about", label: "About" },
+    { href: "/dandyar/projects", label: "Projects" }
   ];
 
   return (
