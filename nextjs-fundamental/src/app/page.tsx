@@ -1,8 +1,23 @@
 import Image from "next/image";
+import fs from 'fs';
+import path from 'path';
+import Link from 'next/link';
 
 export default function Home() {
+  const appDir = path.join(process.cwd(), 'src/app');
+  const items = fs
+    .readdirSync(appDir, { withFileTypes: true })
+    .filter(
+      (dirent) =>
+        dirent.isDirectory() &&
+        !dirent.name.startsWith('(') && // optional: exclude special folders
+        !dirent.name.startsWith('_') && // optional: exclude internal folders
+        !['api'].includes(dirent.name) // exclude system folders like 'api'
+    )
+    .map((dirent) => dirent.name);
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="flex flex-col items-center justify-items-center min-h-screen p-8 pb-10 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <div>
           <h2 className="text-2xl mb-3 font-bold">Sandbox IT HSI 2025</h2>
@@ -31,6 +46,20 @@ export default function Home() {
             .
           </p>
         </div>
+
+        <section>
+      <h1 className="text-2xl font-bold mb-4">Team Member</h1>
+      <ul className="space-y-2">
+        {items.map((name) => (
+          <li key={name}>
+            <Link href={`/${name}`} className="text-blue-600 hover:underline">
+              {name}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </section>
+
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
