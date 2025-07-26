@@ -1,10 +1,9 @@
-import Component from "./components.tsx/sidebar";
-import Profile from "./components.tsx/profile";
+import Home from "./home/page";
 
 export default function Achmadshobari() {
   return (
     <div className="relative">
-      <Component />
+      <Home />
     </div>
   );
 }
