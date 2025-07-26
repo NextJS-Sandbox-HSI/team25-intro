@@ -1,8 +1,9 @@
 import Component from "./components.tsx/sidebar";
+import Profile from "./components.tsx/profile";
 
 export default function Achmadshobari() {
   return (
-    <div>
+    <div className="relative">
       <Component />
     </div>
   );
