@@ -28,3 +28,26 @@
         background-position: 0% 50%;
     }
 }
+
+/* --- Animasi Scroll Reveal Baru --- */
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.appearOnScroll {
+  opacity: 0; /* Mulai dengan tidak terlihat */
+  transform: translateY(20px); /* Sedikit bergeser ke bawah */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Transisi halus */
+}
+
+.appearOnScroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
