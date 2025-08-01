@@ -1,10 +1,10 @@
-import styles from './kemalrizky.module.css'
+import styles from '../kemalrizky.module.css'
 
 export default function KemalRizky() {
     return(
         <div className={styles.page}>
       <div className={styles.card}>
-        <h1 className={styles.name}>Home</h1>
+        <h1 className={styles.name}>Projects</h1>
         <hr className={styles.divider} />
         <p className={styles.bio}>
           Hi, I'm <span className={styles.bold}>Kemal Rizky Fadhlurrohman</span> , currently living in Jakarta. My previous work involved building Internet of Things (IoT)
