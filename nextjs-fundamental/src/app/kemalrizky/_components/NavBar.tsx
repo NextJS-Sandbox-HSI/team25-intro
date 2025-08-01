@@ -10,7 +10,7 @@ export default function NavBar() {
     };
     const activeStyle = { 
         fontWeight: 'bold', 
-        color: '#578FCA',
+        color: '#0050b3',
     };
 
     return (
