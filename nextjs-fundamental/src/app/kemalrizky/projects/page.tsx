@@ -25,7 +25,7 @@ export default function KemalRizky() {
             />
             <ProjectCard
             title="Coupled Ball Simulation"
-            description="Program for simulating a movement of coupled balls based on physical constrains"
+            description="Program for simulating movement of coupled balls based on physical constrains"
             href="https://github.com/kemalrizky/coupled_ball"
             keywords={["Python", "Physical Modelling"]}
             />
