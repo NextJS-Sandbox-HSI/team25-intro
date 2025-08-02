@@ -2,9 +2,13 @@
 
 import { useEffect, useState } from 'react';
 
-const phrases = ['Ahlan wa sahlan.', 'Welcome to my website.', 'Let us learn Next.js together!'];
+// const phrases = ['Ahlan wa sahlan.', 'Welcome to my website.', 'Let us learn Next.js together!'];
 
-export default function TypingText() {
+interface TypingTextProps {
+  phrases: string[];
+}
+
+export default function TypingText({phrases}: TypingTextProps) {
   const [text, setText] = useState('');
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
