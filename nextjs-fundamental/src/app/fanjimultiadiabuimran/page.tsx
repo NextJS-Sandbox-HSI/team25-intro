@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from 'react';
 import styles from './fanjimultiadiabuimran.module.css';
 
@@ -30,20 +32,38 @@ const ExperiencePage = () => (
         <div className="text-left text-gray-200">
             <div className="mb-6">
                 <h3 className="text-blue-300 text-xl font-bold">Admin Officer - Koperasi Sarumpun Bersyarikat</h3>
-                <p className="text-sm text-gray-400 mb-2">Pekanbaru, Riau | 2022 - Sekarang</p>
+                <p className="text-sm text-gray-400 mb-2">Kota Pariaman, Sumatera Barat | 2021 - 2022</p>
                 <ul className="list-disc list-inside">
                     <li>Mengelola administrasi dan dokumen koperasi.</li>
+                    <li>Melakukan penginputan data pembelian barang, data penjualan barang, data utang pelanggan, data piutang koperasi dan data iuran anggota.</li>
                     <li>Melayani anggota dan calon anggota.</li>
+                    <li>Mengelola data anggota dan transaksi.</li>
+                    <li>Melakukan pencatatan data keuangan koperasi.</li>
+                    <li>Menjalankan penagihan kepada pelanggan dan anggota.</li>
+                    <li>Melaksanakan stok opname terhadap saldo barang yang ada.</li>
                     <li>Membuat laporan keuangan bulanan.</li>
+                    <li>Mengirimkan rekap data aktivitas koperasi kepada pimpinan.</li>
                 </ul>
             </div>
+            <div className="mb-6">
+                <h3 className="text-blue-300 text-xl font-bold">Helper - Toko Umar Kurma</h3>
+                <p className="text-sm text-gray-400 mb-2">Kota Pekanbaru, Riau | 2023</p>
+                <ul className="list-disc list-inside">
+                    <li>Melakukan pengemasan (packing) terhadap produk yang akan dijual kepada customer.</li>
+                    <li>Melaksanakan stok opname terhadap saldo barang yang ada.</li>
+                    <li>Melakukan pencatatan transaksi pembelian di gudang.</li>
+                    <li>Melaksanakan pengantaran produk ke alamat customer.</li>
+                </ul>
+            </div>
+
             <div>
                 <h3 className="text-blue-300 text-xl font-bold">Staff Administrasi - PT. Ashiil Cahaya Tauhid</h3>
-                <p className="text-sm text-gray-400 mb-2">Pekanbaru, Riau | 2020 - 2022</p>
+                <p className="text-sm text-gray-400 mb-2">Kota Pekanbaru, Riau | 2023 - 2025</p>
                 <ul className="list-disc list-inside">
-                    <li>Mengurus administrasi perjalanan umrah dan haji.</li>
-                    <li>Berkoordinasi dengan vendor dan mitra kerja.</li>
-                    <li>Memastikan kelengkapan dokumen jamaah.</li>
+                    <li>Mengelola administrasi dan dokumen perusahaan.</li>
+                    <li>Mencatat dan merekap laporan transaksi penjualan harian, database konsumen, inventory, dan data utang konsumen dalam sistem.</li>
+                    <li>Melakukan perekapan data master transaksi penjualan per faktur dalam sistem.</li>
+                    <li>Melaksanakan stok opname terhadap saldo barang yang tersedia.</li>
                 </ul>
             </div>
         </div>
